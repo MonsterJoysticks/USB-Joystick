@@ -80,7 +80,7 @@ rename it to "usbconfig.h". Then edit it accordingly.
  * it is required by the standard. We have made it a config option because it
  * bloats the code considerably.
  */
-#define USB_CFG_INTR_POLL_INTERVAL      10
+#define USB_CFG_INTR_POLL_INTERVAL      1
 /* If you compile a version with endpoint 1 (interrupt-in), this is the poll
  * interval. The value is in milliseconds and must not be less than 10 ms for
  * low speed devices.
@@ -133,7 +133,7 @@ rename it to "usbconfig.h". Then edit it accordingly.
 #define  USB_CFG_DEVICE_ID       0xdc, 0x27
 
 
-#define USB_CFG_DEVICE_VERSION  0x02, 0x00
+#define USB_CFG_DEVICE_VERSION  0x01, 0x01
 /* Version number of the device: Minor number first, then major number.
  */
 
